@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>detail.html</title>
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/swiper-3.4.2.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <!--<link rel="stylesheet" href="static/components/swiper/dist/css/swiper.css"/>-->
+    <link rel="stylesheet" href="css/detail.css"/>
+</head>
+<body>
+<!--头部样式-->
+<header>
+    <div class="hbox clearfix">
+        <div class="logo-box fl">
+            <img src="./images/header/Logo.png" alt="智仟汇">
+            <img src="./images/header/LogoWord.png" alt="智仟汇">
+        </div>
+        <ul class="nav fl" >
+            <li><a href="/">首页</a></li>g
+            <li><a href="/product">商城</a></li>
+            <!--<li><a href="">资讯</a></li>-->
+            <!--<li><a href="">智慧+</a></li>-->
+            <!--<li><a href="">品牌街</a></li>-->
+            <li><a href="./about.html">关于我们</a></li>
+            <li><a href="./downLoad.html">下载APP</a></li>
+        </ul>
+        <ul class="login-box fr">
+            <li><input type="text" class="int-search" placeholder="请输入您查找的内容"><span class="search"></span></li>
+            <li><a class="j_showScreen"></a></li>
+            <li><i class="j_tuichu">注销</i></li>
+        </ul>
+    </div>
+
+</header>
+<!--内容样式-->
+<div class="detail">
+    <!--详情页 title-->
+    <div class="detailTitle">
+            <a href="#">首页</a>
+            <span>&gt;</span>
+            <a href="#">商城</a>
+        </div>
+    <!--放大图  产品信息-->
+    <div class="detailProduct" id="content">
+        <div class="fl productLeft">
+            <div class="fl productLgImg">
+                <img src="images/detail/{{img[0]}}" data-img="{{img[0]}}" data-id="{{productId}}" id="j_img" alt="柠萌U站智能插座"/>
+            </div>
+            <div class="fr productRtImgs" id="j_imgmore">
+                {{each img as value i}}
+                {{if i==0}}
+                <img class="active" src="images/detail/{{value}}" alt="柠萌U站智能插座1"/>
+                {{else}}
+                <img src="images/detail/{{value}}" alt="柠萌U站智能插座1"/>
+                {{/if}}
+                {{/each}}
+            </div>
+        </div>
+        <div class="fr productRight">
+            <!--二维码-->
+            <div class="chartImg">
+                <p class="saoma">扫码下载手机客户端</p>
+                <p>享受手机专属优惠机会</p>
+                <div class="chartLgImg"></div>
+            </div>
+            <!--商品价格-->
+            <div class="fl productRtDetail">
+                <h2 class="j_productInfo">{{productInfo}}</h2>
+                <h3 class="j_price" data-price="{{price}}">价格/￥{{price}}元</h3>
+                <div class="certificate">
+                    <span>免运费</span>
+                    <span>正品保障</span>
+                </div>
+                <div class="choice">
+                    <div class="commonBox">
+                        <span>已选/</span>
+                        <div class="choiceForm">
+                            <span class="j_color">{{productGe[0]}}</span>
+                        </div>
+                    </div>
+                    <div class="commonBox">
+                        <span>规格/</span>
+                        <div class="choiceForm productSelect">
+                            <select name="select" id="select">
+                                {{each productGe as value}}
+                                <option value="{{value}}">{{value}}</option>
+                                {{/each}}
+                                <!--<option value="白色">白色</option>-->
+                            </select>
+                        </div>
+                    </div>
+                    <div class="commonBox">
+                        <span>数量/</span>
+                        <div class="choiceForm">
+                            <span class="j_del sel-num-del">-</span><input type="text" value="1" class="j_sel_num sel-num"><span class="j_add sel-num-add">+</span>
+                        </div>
+                        <span>&nbsp;&nbsp;库存：{{count}}</span>
+                    </div>
+                </div>
+                <div>
+                    <span class="btn-buy">立即购买</span>
+                    <span class="btn-addcart" id="j_addtocart">加入购物车</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--大家都在看  轮播-->
+    <div class="detailLook">
+        <h3>大家都在看</h3>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide slide-see">
+                    <div class="slide-see-box">
+                        <img src="images/detail/wKgomljKNGSAIm5qAACha8X3g6w412.jpg" alt="">
+                        <span>氪2号教育机器人 可编程益智玩具</span>
+                    </div>
+                    <div class="slide-see-box">
+                        <img src="images/detail/wKgomljPdwKACeA2AACEmCVJMNk412.jpg" alt="">
+                        <span> 幻响I-Mu 无疆便携智能血压仪家用便携式</span>
+                    </div>
+                    <div class="slide-see-box">
+                        <img src="images/detail/wKgomljPfw6AUvwrAADtPPccW0o823.jpg" alt="">
+                        <span> 幻响I-MU 蓝牙运动耳机</span>
+                    </div>
+                    <div class="slide-see-box">
+                        <img src="images/detail/wKgomljPgbmAfGRZAADOTSZJzPU299.jpg" alt="">
+                        <span> 幻响 孙小圣音箱 蓝牙版便携迷你音响</span>
+                    </div>
+
+                </div>
+                <div class="swiper-slide slide-see">
+                    <div class="slide-see-box">
+                        <img src="images/detail/wKgomljPglqAXsF8AABL_rk-YEE616.jpg" alt="">
+                        <span> 幻响imu LED护眼台灯 学生儿童工作台灯折叠床头灯可调光护眼灯</span>
+                    </div>
+                    <div class="slide-see-box">
+                        <img src="images/detail/wKgomljPgWGAZFG-AABcqmQLx5M298.jpg" alt="">
+                        <span> 幻响蓝牙运动耳机B10银色 4.1音乐耳塞入耳式</span>
+                    </div>
+                    <div class="slide-see-box">
+                        <img src="images/detail/wKgomljSMOiAJONeAAESOrZsxiQ919.jpg" alt="">
+                        <span> CKY CK008便携式户外无线蓝牙音箱 智能蓝牙4.0迷你小音响</span>
+                    </div>
+                    <div class="slide-see-box">
+                        <img src="images/detail/wKgomljUgvGAWjc9AACI7jvwAAo842.jpg" alt="">
+                        <span> 黑鱼苹果专用数据线 iPhone5 iPhone6 plus 5s 6s数据线 iPad4手机充电线</span>
+                    </div>
+                </div>
+                <div class="swiper-slide slide-see">
+                    <div class="slide-see-box">
+                        <img src="images/detail/wKgomljPdoqAI3LuAACrdHDnFUM086.jpg" alt="">
+                        <span> 科大讯飞 阿尔法小蛋智能机器人 智能语音儿童玩具</span>
+                    </div>
+                    <div class="slide-see-box">
+                        <img src="images/detail/wKgomlilRtiAVNJSAAJE_7dyugI009.jpg" alt="">
+                        <span>阿尔法小蛋智能机器人 小黄人机器人</span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="detailLook">
+
+    </div>
+    <!--商品详情 评价  文章推荐-->
+    <div class="detailBottom">
+        <div class="fl detailBottomLeft">
+            <div class="detailBottomLfTitle">
+                <div class="active fl">商品详情</div>
+                <div class="fl">商品评价 <span>0</span></div>
+                <div class="fl"></div>
+            </div>
+            <div class="detailBottomLfImgs">
+
+            </div>
+        </div>
+        <div class="fr detailBottomRight">
+            <h3>文章推荐</h3>
+            <div class="detailBottomRgIntro">
+                <img src="images/detail/wKgomlhRI1yAfZdXAAD5jLh-52Q698.jpg" alt="文章推荐1"/>
+                <div class="detailBottomRgText">
+                    职场女神的一天
+                </div>
+            </div>
+            <div class="detailBottomRgIntro">
+                <img src="images/detail/wKgomlh9kN6AHBo0AACl_D97teY433.jpg" alt="文章推荐2"/>
+                <div class="detailBottomRgText">
+                    二次元的世界你不懂
+                </div>
+            </div>
+            <div class="detailBottomRgIntro">
+                <img src="images/detail/wKgomlhreQGAfK3pAADRnCHtWqM560.jpg" alt="文章推荐3"/>
+                <div class="detailBottomRgText">
+                    过年回家，根本没法低调！
+                </div>
+            </div>
+            <div class="detailBottomRgIntro">
+                <img src="images/detail/wKgomliibVGAeFCNAAC6gGogUZU109.jpg" alt="文章推荐4"/>
+                <div class="detailBottomRgText">
+                    网速够快，全家都能嗨起来！
+                </div>
+            </div>
+            <div class="detailBottomRgIntro">
+                <img src="images/detail/wKgomli-Z12AVkvwAADHOpFl1_k478.jpg" alt="文章推荐5"/>
+                <div class="detailBottomRgText">
+                    女神，你命中缺ta
+                </div>
+            </div>
+            <div class="detailBottomRgIntro">
+                <img src="images/detail/wKgomlh9hvSATAhrAACfOvgVGS4837.jpg" alt="文章推荐6"/>
+                <div class="detailBottomRgText">
+                    时髦人作到“炸”的品质生活物
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!--脚步样式-->
+<!--脚步样式-->
+<footer>
+    <div class="fbox">
+        <div><img src="./images/header/footLight.png"></div>
+        <div class="foot-word"><span>智仟汇/better choice</span></div>
+        <div class="icon-box clearfix">
+            <dl>
+                <dt><img src="./images/header/footIcon1.png" alt=""></dt>
+                <dd>
+                    <p>全球精选</p>
+                    <p>Global Select</p>
+                </dd>
+            </dl>
+            <dl>
+                <dt><img src="./images/header/footIcon2.png" alt=""></dt>
+                <dd>
+                    <p>急速物流</p>
+                    <p>Rapid Logistics</p>
+                </dd>
+            </dl>
+            <dl>
+                <dt><img src="./images/header/footIcon3.png" alt=""></dt>
+                <dd>
+                    <p>正品保证</p>
+                    <p>Quality Assurance</p>
+                </dd>
+            </dl>
+            <dl>
+                <dt><img src="./images/header/footIcon4.png" alt=""></dt>
+                <dd>
+                    <p>无忧售后</p>
+                    <p>Worry-free After-sales</p>
+                </dd>
+            </dl>
+        </div>
+    </div>
+    <div class="foot-line"></div>
+    <div class="fbox clearfix">
+        <div class="foot-left fl">
+            <div class="clearfix">
+                <img src="./images/header/footTel.png" class="fl">
+                <div class="fl">
+                    <p class="client">Ios/Android</p>
+                    <p class="client">智仟汇客户端下载</p>
+                </div>
+            </div>
+            <div>
+                <p class="brief">Copyright © 2017 zhihuiup.com 版权所有| 购买需谨慎 渝ICP备16009922号-1</p>
+                <p>公司：重庆智豆电子商务有限公司</p>
+            </div>
+        </div>
+        <div class="foot-right fr">
+            <p>公司地址：重庆市渝中区化龙桥企业天地2号楼18-1</p>
+            <p class="about-me">联系我们</p>
+            <p class="tel">客服电话:4000-999-508</p>
+        </div>
+    </div>
+</footer>
+
+<!--登录注册弹出框-->
+<div class="screen hide">
+    <div class="j_exit exit"></div>
+    <div class="login-screen show">
+        <div class="logo-login"></div>
+        <form class="form">
+            <p>
+                <input type="text" class="j_uname input" placeholder="请输入用户名">
+            </p>
+            <p>
+                <input type="password" class="j_pwd input" placeholder="请输入密码">
+            </p>
+            <p>
+                <span>没有账号 ?</span><span class="j_register color">&nbsp;立即注册</span>
+            </p>
+            <button class="j_btn_login btn-login">
+                立即登录
+            </button>
+        </form>
+    </div>
+
+    <div class="register-screen hide">
+        <div class="logo-login"></div>
+        <form class="form">
+            <p>
+                <input type="text" class="j_register_name input" placeholder="请输入用户名">
+            </p>
+            <p>
+                <input type="password" class="j_register_pwd input" placeholder="请输入密码">
+            </p>
+            <p>
+                <input type="password" class="j_register_repwd input" placeholder="请再次输入密码">
+            </p>
+            <p>
+                <input type="tel" class="j_register_tel input" placeholder="请输入手机号">
+            </p>
+            <div class="clearfix">
+                <div class="fl">
+                    <input type="checkbox" id="checkbox" checked='checked'>
+                    <label for="checkbox"></label>
+                    <span>我已阅读并同意</span>
+                    <span class="color">智仟汇用户注册协议</span>
+                </div>
+                <div class="fr">
+                    <span>已有账号？</span><span class="j_login color">立即登录</span>
+                </div>
+            </div>
+            <button class="j_btn_register btn-login">
+                立即注册
+            </button>
+        </form>
+    </div>
+</div>
+
+
+<script src="static/components/jquery/dist/jquery.js"></script>
+<script src="js/swiper-3.4.2.jquery.min.js"></script>
+<script src="js/common.js"></script>
+<script src="js/detail.js"></script>
+</body>
+</html>

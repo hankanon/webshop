@@ -1,0 +1,409 @@
+.cursorP {
+  cursor: pointer;
+}
+.textEllips {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+#indexContainer {
+  font-family: "Microsoft YaHei";
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 78px;
+}
+#indexContainer .ziXun .ziXunstyle {
+  width: 1200px;
+  margin: 0 auto;
+  padding-top: 36px;
+  padding-bottom: 54px;
+}
+#indexContainer .ziXun .ziXunstyle .title {
+  width: 1200px;
+  padding-bottom: 36px;
+  font-style: normal;
+}
+#indexContainer .ziXun .ziXunstyle .title .word {
+  color: #191919;
+  font-size: 20px;
+  font-weight: bold;
+}
+#indexContainer .ziXun .ziXunstyle .title a {
+  display: block;
+  color: #000;
+  font-weight: normal;
+  line-height: 29px;
+  font-size: 13px;
+}
+#indexContainer .ziXun .ziXunstyle .title a span {
+  display: inline-block;
+  margin-right: 10px;
+  text-align: center;
+  width: 96px;
+  line-height: 25px;
+  font-size: 14px;
+  border: 1px solid #000;
+}
+#indexContainer .ziXun .ziXunstyle .title:after {
+  content: "";
+  display: block;
+  clear: both;
+  visibility: hidden;
+}
+#indexContainer .ziXun .ziXunstyle .ziXunImg {
+  width: 910px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+#indexContainer .ziXun .ziXunstyle .ziXunImg li {
+  width: 275px;
+  height: 210px;
+  margin-bottom: 85px;
+  margin-right: 27px;
+}
+#indexContainer .ziXun .ziXunstyle .ziXunImg li .pic-block {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 150px;
+}
+#indexContainer .ziXun .ziXunstyle .ziXunImg li .pic-block img {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+}
+#indexContainer .ziXun .ziXunstyle .ziXunImg li .pic-block:hover img {
+  transform: scale(1.2);
+  transition: all 1s ease-in-out;
+}
+#indexContainer .ziXun .ziXunstyle .ziXunImg li .zx-title {
+  padding-top: 10px;
+  font-size: 14px;
+  line-height: 34px;
+  text-align: left;
+}
+#indexContainer .ziXun .ziXunstyle .ziXunImg li .zx-btm span {
+  color: #858585;
+  font-size: 12px;
+}
+#indexContainer .ziXun .ziXunstyle .ziXunImg li .zx-btm:after {
+  content: "";
+  display: block;
+  clear: both;
+  visibility: hidden;
+}
+#indexContainer .ziXun .ziXunstyle .ziXunR ul li {
+  width: 275px;
+  margin-bottom: 7px;
+}
+#indexContainer .ziXun .ziXunstyle .ziXunR ul li .zx-title {
+  position: relative;
+  font-size: 14px;
+  line-height: 34px;
+  text-align: left;
+  padding-top: 0px;
+  margin-top: -9px;
+}
+#indexContainer .ziXun .ziXunstyle .ziXunR ul li .zx-title .dot {
+  display: block;
+  width: 5px;
+  height: 5px;
+  position: absolute;
+  top: 14px;
+  left: -4%;
+  background: #f19149;
+  border-radius: 100%;
+}
+#indexContainer .ziXun .ziXunstyle .ziXunR ul li .zx-btm {
+  font-size: 12px;
+  color: #858585;
+}
+#indexContainer .ziXun .ziXunstyle .ziXunR ul li .zx-btm:after {
+  content: "";
+  display: block;
+  clear: both;
+  visibility: hidden;
+}
+#indexContainer .ziXun .ziXunstyle:after {
+  content: "";
+  display: block;
+  clear: both;
+  visibility: hidden;
+}
+#indexContainer .hotSale {
+  background: #f6f6f6;
+}
+#indexContainer .hotSale .hotSalestyle {
+  width: 1200px;
+  margin: 0 auto;
+  padding-top: 36px;
+  padding-bottom: 54px;
+}
+#indexContainer .hotSale .hotSalestyle .title {
+  width: 1200px;
+  padding-bottom: 36px;
+  font-style: normal;
+}
+#indexContainer .hotSale .hotSalestyle .title .word {
+  color: #191919;
+  font-size: 20px;
+  font-weight: bold;
+}
+#indexContainer .hotSale .hotSalestyle .title a {
+  display: block;
+  color: #000;
+  font-weight: normal;
+  line-height: 29px;
+  font-size: 13px;
+}
+#indexContainer .hotSale .hotSalestyle .title a span {
+  display: inline-block;
+  margin-right: 10px;
+  text-align: center;
+  width: 96px;
+  line-height: 25px;
+  font-size: 14px;
+  border: 1px solid #000;
+}
+#indexContainer .hotSale .hotSalestyle .title:after {
+  content: "";
+  display: block;
+  clear: both;
+  visibility: hidden;
+}
+#indexContainer .hotSale .hotSalestyle .hotList {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#indexContainer .hotSale .hotSalestyle .hotList .item {
+  width: 283px;
+  height: 350px;
+  background: #fff;
+  border: 1px solid #ddd;
+}
+#indexContainer .hotSale .hotSalestyle .hotList .item .hotPic {
+  width: 263px;
+  height: 263px;
+  margin: 10px auto 0;
+}
+#indexContainer .hotSale .hotSalestyle .hotList .item .hotPic img {
+  width: 100%;
+}
+#indexContainer .hotSale .hotSalestyle .hotList .item .hotWord {
+  padding: 10px;
+  text-align: left;
+}
+#indexContainer .hotSale .hotSalestyle .hotList .item .hotWord .hotWordp {
+  color: #191919;
+  line-height: 22px;
+  font-size: 18px;
+  font-weight: bold;
+}
+#indexContainer .hotSale .hotSalestyle .hotList .item .hotWord .hotWordd {
+  height: 20px;
+  line-height: 20px;
+  font-size: 14px;
+  overflow: hidden;
+}
+#indexContainer .hotSale .hotSalestyle .hotList .item:hover {
+  background: #ddd;
+  transition: background 1s;
+}
+#indexContainer .indexWisdom {
+  background: black;
+}
+#indexContainer .indexWisdom .indexWisdomstyle {
+  padding-top: 36px;
+}
+#indexContainer .indexWisdom .indexWisdomstyle .title {
+  width: 1200px;
+  margin: 0 auto;
+  padding-bottom: 36px;
+  font-style: normal;
+}
+#indexContainer .indexWisdom .indexWisdomstyle .title .word {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+#indexContainer .indexWisdom .indexWisdomstyle .title a {
+  display: block;
+  color: white;
+  font-weight: normal;
+  line-height: 29px;
+  font-size: 13px;
+}
+#indexContainer .indexWisdom .indexWisdomstyle .title a span {
+  display: inline-block;
+  margin-right: 10px;
+  text-align: center;
+  width: 96px;
+  line-height: 25px;
+  font-size: 14px;
+  border: 1px solid white;
+}
+#indexContainer .indexWisdom .indexWisdomstyle .title:after {
+  content: "";
+  display: block;
+  clear: both;
+  visibility: hidden;
+}
+#indexContainer .indexWisdom .indexWisdomstyle .wisdomList {
+  width: 100%;
+  height: 456px;
+}
+#indexContainer .indexWisdom .indexWisdomstyle .wisdomList ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+#indexContainer .indexWisdom .indexWisdomstyle .wisdomList ul li {
+  position: relative;
+  width: 25%;
+  height: 50%;
+  overflow: hidden;
+}
+#indexContainer .indexWisdom .indexWisdomstyle .wisdomList ul li img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+#indexContainer .indexWisdom .indexWisdomstyle .wisdomList ul li .moveWord {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  visibility: hidden;
+  position: absolute;
+  z-index: 999;
+  top: 0;
+  left: 0;
+}
+#indexContainer .indexWisdom .indexWisdomstyle .wisdomList ul li .moveWord span {
+  width: 94%;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 100;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin: auto;
+}
+#indexContainer .indexWisdom .indexWisdomstyle .wisdomList ul li .cover-bg {
+  background: black;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 1;
+  top: 0;
+  left: 0;
+}
+#indexContainer .indexWisdom .indexWisdomstyle .wisdomList ul li:hover .moveWord {
+  visibility: visible;
+  top: 45%;
+  transition: top 0.8s cubic-bezier(0.46, 0.03, 0.52, 0.96);
+}
+#indexContainer .indexWisdom .indexWisdomstyle .wisdomList ul li:hover .cover-bg {
+  opacity: 0.7;
+  transition: opacity .8s;
+}
+#indexContainer .brandStreet {
+  background: url(../images/index.image/logoStr.png) no-repeat;
+  background-size: 100% 100%;
+}
+#indexContainer .brandStreet .brandStreetstyle {
+  width: 1200px;
+  margin: 0 auto;
+  padding-top: 36px;
+  padding-bottom: 54px;
+}
+#indexContainer .brandStreet .brandStreetstyle .title {
+  width: 1200px;
+  margin: 0 auto;
+  padding-bottom: 36px;
+  font-style: normal;
+}
+#indexContainer .brandStreet .brandStreetstyle .title .word {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+#indexContainer .brandStreet .brandStreetstyle .title a {
+  display: block;
+  color: white;
+  font-weight: normal;
+  line-height: 29px;
+  font-size: 13px;
+}
+#indexContainer .brandStreet .brandStreetstyle .title a span {
+  display: inline-block;
+  margin-right: 10px;
+  text-align: center;
+  width: 96px;
+  line-height: 25px;
+  font-size: 14px;
+  border: 1px solid white;
+}
+#indexContainer .brandStreet .brandStreetstyle .title:after {
+  content: "";
+  display: block;
+  clear: both;
+  visibility: hidden;
+}
+#indexContainer .brandStreet .brandStreetstyle .logoList {
+  width: 100%;
+}
+#indexContainer .brandStreet .brandStreetstyle .logoList ul {
+  width: 100%;
+  height: 228px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+#indexContainer .brandStreet .brandStreetstyle .logoList ul li {
+  width: 190px;
+  height: 96px;
+  margin-right: 12px;
+  background: #fff;
+  margin-bottom: 18px;
+  position: relative;
+}
+#indexContainer .brandStreet .brandStreetstyle .logoList ul li img {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 96px;
+  height: 96px;
+}
+#indexContainer .brandStreet .brandStreetstyle .logoList ul li .secbanner_cover {
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  opacity: .3;
+  box-shadow: inset 0 -70px 123px #000;
+}
+#indexContainer .brandStreet .brandStreetstyle .logoList ul li .secbanner_cover:hover {
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+#indexContainer .brandStreet .brandStreetstyle .logoList ul li:nth-child(6) {
+  margin-right: 0px;
+}
+#indexContainer .brandStreet .brandStreetstyle .logoList ul li:nth-child(12) {
+  margin-right: 0px;
+}

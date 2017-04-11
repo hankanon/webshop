@@ -1,0 +1,193 @@
+/*part1*/
+@media only screen and (min-width: 640px) {
+  .contentOne {
+    position: relative;
+    margin-top: 78px;
+  }
+  .contentOne .bg {
+    width: 100%;
+  }
+  .contentOne .contentOneText {
+    position: absolute;
+    top: 14%;
+    left: 22%;
+    width: 59%;
+    height: 65%;
+  }
+  .contentOne .contentOneText:after {
+    content: "";
+    display: block;
+    clear: both;
+    visibility: hidden;
+  }
+  .contentOne .leftContent {
+    width: 28vw;
+    margin-top: 12vh;
+  }
+  .contentOne .leftContent:after {
+    content: "";
+    display: block;
+    clear: both;
+    visibility: hidden;
+  }
+  .contentOne .leftContentWord img {
+    width: 85%;
+  }
+  .contentOne .leftContentApp {
+    margin-top: 23%;
+  }
+  .contentOne .leftContentApp .leftContentAppLeft {
+    width: 50%;
+  }
+  .contentOne .leftContentApp .leftContentAppLeft .ios {
+    width: 80%;
+  }
+  .contentOne .leftContentApp .leftContentAppLeft .android {
+    width: 80%;
+    margin-top: 20%;
+  }
+  .contentOne .leftContentApp .leftContentAppRight {
+    width: 40%;
+  }
+  .contentOne .leftContentApp .leftContentAppRight img {
+    width: 85%;
+  }
+  .contentOne .rightContent {
+    width: 30vw;
+  }
+  .contentOne .rightContent img {
+    width: 100%;
+  }
+  .contentTwo .image {
+    width: 40%;
+    margin-left: 10%;
+    margin-top: -4%;
+    text-align: center;
+  }
+  .contentTwo .image img {
+    width: 60%;
+  }
+  .contentTwo .textWord {
+    width: 40%;
+    margin-top: -4%;
+  }
+  .contentTwo .textWord img {
+    width: 75%;
+    margin-top: 4%;
+  }
+  .contentTwo:after {
+    content: "";
+    display: block;
+    clear: both;
+    visibility: hidden;
+  }
+  .contentThree {
+    position: relative;
+  }
+  .contentThree .bkg2 {
+    width: 100%;
+  }
+  .contentThree .contentThreeDetail {
+    position: absolute;
+    width: 80%;
+    top: 10%;
+    margin-left: 18%;
+  }
+  .contentThree .contentThreeDetail .contentThreeImg1 {
+    width: 26%;
+    margin-top: 15%;
+  }
+  .contentThree .contentThreeDetail .contentThreeImg2 {
+    width: 50%;
+    margin-right: 16%;
+    margin-top: 4%;
+  }
+  .contentThree .contentThreeDetail:after {
+    content: "";
+    display: block;
+    clear: both;
+    visibility: hidden;
+  }
+  .contentFour {
+    text-align: center;
+  }
+  .contentFour .img4Left {
+    width: 40%;
+    margin-top: -13%;
+    margin-right: -3%;
+  }
+  .contentFour .img4Left img {
+    width: 70%;
+  }
+  .contentFour .img4Right {
+    width: 40%;
+    margin-right: 14%;
+  }
+  .contentFour .img4Right img {
+    width: 67%;
+  }
+  .contentFour:after {
+    content: "";
+    display: block;
+    clear: both;
+    visibility: hidden;
+  }
+  .contentFive {
+    position: relative;
+    margin-top: 7vh;
+  }
+  .contentFive .bg3 {
+    width: 100%;
+  }
+  .contentFive .contentFiveDetail {
+    position: absolute;
+    width: 80%;
+    top: 10%;
+    margin-left: 18%;
+  }
+  .contentFive .contentFiveDetail .Img1 {
+    width: 26%;
+    margin-top: 15%;
+  }
+  .contentFive .contentFiveDetail .Img2 {
+    width: 50%;
+    margin-right: 16%;
+    margin-top: 4%;
+  }
+  .contentFive .contentFiveDetail:after {
+    content: "";
+    display: block;
+    clear: both;
+    visibility: hidden;
+  }
+  .contentSix {
+    margin-bottom: 100px;
+    text-align: center;
+  }
+  .contentSix .moreText {
+    margin-top: -4%;
+  }
+  .contentSix .moreText img {
+    width: 25%;
+  }
+  .contentSix .logoImg {
+    margin-top: 3%;
+    margin-bottom: 3%;
+  }
+  .contentSix .logoImg img {
+    width: 8%;
+  }
+  .contentSix .downLoadImg .iosDown {
+    width: 10%;
+    margin-right: 2%;
+  }
+  .contentSix .downLoadImg .androidDown {
+    width: 10%;
+  }
+  .contentSix .downLoadImg:after {
+    content: "";
+    display: block;
+    clear: both;
+    visibility: hidden;
+  }
+}

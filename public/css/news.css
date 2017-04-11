@@ -1,0 +1,48 @@
+.cursorP {
+  cursor: pointer;
+}
+#newsContainer {
+  font-family: "Microsoft YaHei";
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+#newsContainer .newsHead {
+  letter-spacing: 2px;
+  color: #858585;
+  text-align: left;
+  line-height: 65px;
+  font-size: 14px;
+  height: 65px;
+}
+#newsContainer .newsHead a {
+  margin-left: 12px;
+}
+#newsContainer .newsHead span:nth-child(1) {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+#newsContainer .newsContent {
+  width: 1200px;
+  margin: 0 auto;
+}
+#newsContainer .newsContent .newsNavTab {
+  width: 100%;
+  margin-bottom: 70px;
+}
+#newsContainer .newsContent .newsNavTab .navList {
+  width: 99.75%;
+  overflow: hidden;
+  border-bottom: 4px solid #f2d000;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+#newsContainer .newsContent .newsNavTab .navList li {
+  text-align: center;
+  width: 20%;
+  height: 47px;
+  line-height: 47px;
+  background: #fff;
+  color: #333;
+}

@@ -1,0 +1,254 @@
+/*
+*about banner 关于我们  轮播
+//*/
+.swiper-container{
+  width:100%;
+  height: 600px;
+  margin-top:70px;
+  .left,.right{
+    display: none;
+  }
+}
+.aboutLunBo:hover>.left,.aboutLunBo:hover>.right{
+  display: block;
+}
+/*
+*about content 关于我们  内容
+*/
+div.aboutContent:nth-child(2n+1){
+  background-color:#f5f5f5;
+}
+.aboutContent{
+  padding-top:45px;
+  padding-bottom:67px;
+  padding-left:10%;
+  padding-right:10%;
+  font-family: "Microsoft YaHei";
+  .aboutTitle{
+    width:100%;
+    .aboutInfoTitle{
+      width:100%;
+      height:40px;
+      line-height: 40px;
+      .yellowLine{
+        float:left;
+        width:5px;
+        height:26px;
+        background-color:#f5d500;
+        margin-right:20px;
+        margin-top:7px;
+        //vertical-align: middle;
+      }
+      .aboutChTitle{
+        font-weight: bold;
+        text-indent: 10px;
+        font-size: 24px;
+        color:#191919;
+      }
+    }
+    .aboutInfoTitle:after{
+      content:"";
+      display: block;
+      clear: both;
+    }
+    .aboutInfoEgTitle{
+      padding-left:20px;
+      color:#858585;
+      font-size: 24px;
+      .strong{
+        font-weight: bold;
+      }
+    }
+  }
+  .aboutText{
+    width:100%;
+    margin-top:40px;
+    line-height:30px;
+    font-size:18px;
+    color:#666;
+    padding-left:12px;
+  }
+}
+.aboutValue{
+  .aboutText{
+    margin-left:-12px;
+    img{
+      width:100%;
+      height:300px;
+    }
+  }
+}
+.aboutCulture{
+  .aboutText{
+    .aboutTextLeft{
+      width:55%;
+      height:300px;
+      padding-left:60px;
+      .aboutTextUD{
+        .strongText{
+          margin-left:15px;
+          font-size:22px;
+          font-weight: bold;
+        }
+        .borderLine{
+          width:40px;
+          height:0;
+          border-bottom:1px solid #666;
+          margin-top:15px;
+        }
+        .bandText{
+          font-size:20px;
+          line-height:30px;
+        }
+      }
+      .aboutTextUp{
+        margin-top:75px;
+      }
+      .aboutTextUp:after{
+        content:"";
+        display: block;
+        clear: both;
+      }
+      .aboutTextDown{
+        margin-top:35px;
+      }
+      .aboutTextDown:after{
+        content:"";
+        display: block;
+        clear: both;
+      }
+    }
+    .aboutTextRight{
+      width:45%;
+      height:300px;
+    }
+  }
+  .aboutText:after{
+    content:"";
+    display: block;
+    clear: both;
+  }
+}
+.aboutCharacter{
+  .aboutText{
+    margin-left:-12px;
+    display: flex;
+    justify-content: space-between;
+    .aboutTextBox{
+      width:32%;
+      img{
+        width:100%;
+        height:210px;
+      }
+      .char{
+        text-align: center;
+        line-height: 65px;
+        .eg{
+          font-size: 22px;
+        }
+        .num{
+          font-size:26px;
+        }
+      }
+      .borderLine{
+        width:80%;
+        margin: 0 auto 20px;
+        border-bottom: 1px solid #c2c2c2;
+      }
+      .aboutTextInfo{
+        width:95%;
+        margin:0 auto;
+        font-size: 16px;
+        line-height: 30px;
+      }
+    }
+  }
+}
+
+.aboutProduct{
+  .aboutText{
+    margin-bottom:45px;
+    font-size: 16px;
+  }
+  .aboutProducts{
+    display: flex;
+    justify-content: space-between;
+    .aboutProductImg{
+      width:32.5%;
+      height:350px;
+      //line-height: 350px;
+      border:1px solid #eeeeee;
+      text-align: center;
+      position: relative;
+      .imgOne{
+        width:100%;
+        //height:100%;
+        position: absolute;
+        top:23%;
+        left:0;
+      }
+      .imgTwo{
+        width:100%;
+        height:100%;
+      }
+      .imgThree{
+        height:100%;
+      }
+    }
+  }
+}
+
+.aboutSpread{
+  .aboutText{
+    margin-left:-12px;
+    .aboutBox{
+      width:100%;
+      height:250px;
+      background-color: #fff;
+      border:1px solid #c6c6c6;
+      .aboutImg{
+        width:40%;
+        height:100%;
+        position: relative;
+        img{
+          width:100%;
+          height:100%;
+        }
+        .triangle{
+          width:0;
+          height:0;
+          border:15px solid transparent;
+          border-right-color:#fff;
+          position: absolute;
+          top:45%;
+          right:0;
+          z-index: 2;
+        }
+      }
+      .aboutIntro{
+          margin-top:35px;
+          margin-left:10%;
+          font-size:20px;
+          line-height: 45px;
+      }
+    }
+    .aboutBox:after{
+      content: "";
+      display: block;
+      clear: both;
+    }
+  }
+}
+.aboutMuseum,.aboutCooperation{
+  .aboutText{
+    margin-left:-15px;
+    img{
+      width:100%;
+      height:300px;
+    }
+  }
+}
+div.aboutCooperation{
+  background-color:#fff !important;
+}
+

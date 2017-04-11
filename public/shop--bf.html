@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>新闻页面</title>
+    <link rel="stylesheet" href="./css/reset.css"/>
+    <link rel="stylesheet" href="./css/shop.css"/>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+<!--头部样式-->
+<header>
+    <div class="hbox clearfix">
+        <div class="logo-box fl">
+            <img src="./images/header/Logo.png" alt="智仟汇">
+            <img src="./images/header/LogoWord.png" alt="智仟汇">
+        </div>
+        <ul class="nav fl" >
+            <li><a href="">首页</a></li>
+            <li><a href="">商城</a></li>
+            <li><a href="">资讯</a></li>
+            <li><a href="">智慧+</a></li>
+            <li><a href="">品牌街</a></li>
+            <li><a href="">关于我们</a></li>
+            <li><a href="">下载APP</a></li>
+        </ul>
+        <ul class="login-box fr">
+            <li><input type="text" class="int-search" placeholder="请输入您查找的内容"><span class="search"></span></li>
+            <li><a class="j_showScreen"></a></li>
+            <li></li>
+        </ul>
+    </div>
+</header>
+
+<div id="shopContainer" >
+    <div class="shopHead">
+        <!--ML12是为了同商城的位子统一-->
+        <a href="http://www.zhihuiup.com/toWebGoodsPage/index" class=" cursorP ">首页</a>
+        <span class="MLR10 ">&gt;</span>
+        <span class="cursorP">商品</span>
+    </div>
+    <div class="shopContent">
+        <!--shopheader部分-->
+        <div class=" shopheader">
+            <!--一级目录-->
+            <div class=" firstCategory" >
+                <div class="categoryContent" data-numb="one">
+                    <div class="imgContent">
+                        <img src="./images/shop.image/wKgomlh-VcKAIuT6AAAJsmfV6AY553.jpg" class="categoryImg imgStyle" >
+                        <img src="./images/shop.image/wKgomliAjrOANcaNAAAHrhmH_o8035.jpg" class="categoryImg imgSelectStyle" >
+                    </div>
+                    <div class="categoryTitle">家居生活</div>
+                    <div class="arrowDown"></div>
+                </div>
+                <div class="categoryContent" data-numb="two">
+                    <div class="imgContent">
+                        <img src="./images/shop.image/wKgomlh-VjCAf4fOAAADRBcICSM086.png" class="categoryImg imgStyle" >
+                        <img src="./images/shop.image/wKgomliAjpqAEiuaAAADQSqjhWs389.png" class="categoryImg imgSelectStyle" >
+                    </div>
+                    <div class="categoryTitle">智能健康</div>
+                    <div class="arrowDown" ></div>
+                </div>
+                <div class="categoryContent" data-numb="three">
+                    <div class="imgContent">
+                        <img src="./images/shop.image/wKgomlh-VoGAZLm4AAAC5xBbSE4462.png" class="categoryImg imgStyle" >
+                        <img src="./images/shop.image/wKgomliAjhuAPhvqAAAC5ju5rnA513.png" class="categoryImg imgSelectStyle">
+                    </div>
+                    <div class="categoryTitle">智能户外</div>
+                    <div class="arrowDown" ></div>
+                </div>
+                <div class="categoryContent" data-numb="four">
+                    <div class="imgContent">
+                        <img src="./images/shop.image/wKgomliAjn-AA2LeAAACKvWKgME886.png" class="categoryImg imgStyle" >
+                        <img src="./images/shop.image/wKgomliAjn-AW5WXAAACLoLuUuA932.png" class="categoryImg imgSelectStyle" >
+                    </div>
+                    <div class="categoryTitle">智能教育</div>
+                    <div class="arrowDown" ></div>
+                </div><div class="categoryContent" data-numb="five">
+                <div class="imgContent">
+                    <img src="./images/shop.image/wKgomliAjlGAFHFsAAAC_8bao0M924.png" class="categoryImg imgStyle" >
+                    <img src="./images/shop.image/wKgomliAjlGAWMXhAAADANwYpBY366.png" class="categoryImg imgSelectStyle" >
+                </div>
+                <div class="categoryTitle">智能数码</div>
+                <div class="arrowDown" ></div>
+            </div>
+                <div class="categoryContent" data-numb="six">
+                    <div class="imgContent">
+                        <img src="./images/shop.image/wKgomlh-VmeAc-P0AAAC-WOEKyk055.png" class="categoryImg imgStyle" >
+                        <img src="./images/shop.image/wKgomliAjg2AdfdxAAAC8_2136A564.png" class="categoryImg imgSelectStyle" >
+                    </div>
+                    <div class="categoryTitle">智能宠物装备</div>
+                    <div class="arrowDown" ></div>
+                </div>
+                <div class="categoryContent" data-numb="seven">
+                    <div class="imgContent">
+                        <img src="./images/shop.image/wKgomlh-ViKAa-qNAAABqWqY8lU105.png" class="categoryImg imgStyle" >
+                        <img src="./images/shop.image/wKgomliAjqWAPAvyAAABqG292qk666.png" class="categoryImg imgSelectStyle" >
+                    </div>
+                    <div class="categoryTitle">智能家电</div><div class="arrowDown" ></div>
+                </div>
+                <div class="categoryContent" data-numb="eight">
+                    <div class="imgContent">
+                        <img src="./images/shop.image/wKgomlh-VpSAXxVYAAADM8WGX8c596.png" class="categoryImg imgStyle" >
+                        <img src="./images/shop.image/wKgomliAjo2Ae-WtAAADJO1s3NA461.png" class="categoryImg imgSelectStyle" >
+                    </div>
+                    <div class="categoryTitle">智能店铺</div>
+                    <div class="arrowDown" ></div>
+                </div>
+            </div>
+            <!--二级目录-->
+            <div class="drop-box">
+                <!--第一个家居生活-->
+                <ul class="categoryDetail clearfix" name="one"><li><a href="http://www.zhihuiup.com/toWebGoodsPage/hotSale#" data-id="86" class="secondBtn">路由器</a></li>
+                        <li><a href="http://www.zhihuiup.com/toWebGoodsPage/hotSale#" data-id="331" class="secondBtn">机器人（玩具类）</a></li><li><a href="http://www.zhihuiup.com/toWebGoodsPage/hotSale#" data-id="71" class="secondBtn">游戏机</a></li><li><a href="http://www.zhihuiup.com/toWebGoodsPage/hotSale#" data-id="68" class="secondBtn">机器人（陪伴类）</a></li><li><a href="http://www.zhihuiup.com/toWebGoodsPage/hotSale#" data-id="72" class="secondBtn">3D眼镜（VR）</a></li><li><a href="http://www.zhihuiup.com/toWebGoodsPage/hotSale#" data-id="301" class="secondBtn">键盘</a></li><li><a href="http://www.zhihuiup.com/toWebGoodsPage/hotSale#" data-id="302" class="secondBtn">鼠标</a></li><li><a href="http://www.zhihuiup.com/toWebGoodsPage/hotSale#" data-id="114" class="secondBtn">充电器</a></li><li><a href="http://www.zhihuiup.com/toWebGoodsPage/hotSale#" data-id="321" class="secondBtn">智能U盘</a></li><li><a href="http://www.zhihuiup.com/toWebGoodsPage/hotSale#" data-id="332" class="secondBtn">数据线.</a></li><li><a href="http://www.zhihuiup.com/toWebGoodsPage/hotSale#" data-id="125" class="secondBtn">鼠标垫</a></li><li><a href="http://www.zhihuiup.com/toWebGoodsPage/hotSale#" data-id="303" class="secondBtn">笔记本电脑</a></li><li><a href="http://www.zhihuiup.com/toWebGoodsPage/hotSale#" data-id="110" class="secondBtn">智能眼镜</a></li><li><a href="http://www.zhihuiup.com/toWebGoodsPage/hotSale#" data-id="104" class="secondBtn">智能手机壳</a></li><li><a href="http://www.zhihuiup.com/toWebGoodsPage/hotSale#" data-id="163" class="secondBtn">智能吉他</a></li><li><a href="http://www.zhihuiup.com/toWebGoodsPage/hotSale#" data-id="333" class="secondBtn">打印机</a></li><li><a href="http://www.zhihuiup.com/toWebGoodsPage/hotSale#" data-id="143" class="secondBtn">电子白板</a></li></ul>
+
+                <!--第二个智能户外-->
+
+                <ul class="categoryDetail clearfix" name="two"><li><a href="http://www.zhihuiup.com/toWebGoodsPage/hotSale#" data-id="86" class="secondBtn">路由器</a></li><li><a href="http://www.zhihuiup.com/toWebGoodsPage/hotSale#" data-id="291" class="secondBtn">自拍杆</a></li><li><a href="http://www.zhihuiup.com/toWebGoodsPage/hotSale#" data-id="65" class="secondBtn">音响</a></li><li><a href="http://www.zhihuiup.com/toWebGoodsPage/hotSale#" data-id="106" class="secondBtn">移动电源</a></li><li><a href="http://www.zhihuiup.com/toWebGoodsPage/hotSale#" data-id="66" class="secondBtn">耳机</a></li><li><a href="http://www.zhihuiup.com/toWebGoodsPage/hotSale#" data-id="63" class="secondBtn">相机</a></li><li><a href="http://www.zhihuiup.com/toWebGoodsPage/hotSale#" data-id="331" class="secondBtn">机器人（玩具类）</a></li><li><a href="http://www.zhihuiup.com/toWebGoodsPage/hotSale#" data-id="71" class="secondBtn">游戏机</a></li><li><a href="http://www.zhihuiup.com/toWebGoodsPage/hotSale#" data-id="68" class="secondBtn">机器人（陪伴类）</a></li><li><a href="http://www.zhihuiup.com/toWebGoodsPage/hotSale#" data-id="72" class="secondBtn">3D眼镜（VR）</a></li><li><a href="http://www.zhihuiup.com/toWebGoodsPage/hotSale#" data-id="301" class="secondBtn">键盘</a></li>
+                        <li><a href="http://www.zhihuiup.com/toWebGoodsPage/hotSale#" data-id="104" class="secondBtn">智能手机壳</a></li><li><a href="http://www.zhihuiup.com/toWebGoodsPage/hotSale#" data-id="163" class="secondBtn">智能吉他</a></li><li><a href="http://www.zhihuiup.com/toWebGoodsPage/hotSale#" data-id="333" class="secondBtn">打印机</a></li><li><a href="http://www.zhihuiup.com/toWebGoodsPage/hotSale#" data-id="143" class="secondBtn">电子白板</a></li></ul>
+
+                <!--智能教育-->
+
+                <ul class="categoryDetail clearfix" name="three"><li><a href="http://www.zhihuiup.com/toWebGoodsPage/hotSale#" data-id="86" class="secondBtn">路由器</a></li><li><a href="http://www.zhihuiup.com/toWebGoodsPage/hotSale#" data-id="291" class="secondBtn">自拍杆</a></li><li><a href="http://www.zhihuiup.com/toWebGoodsPage/hotSale#" data-id="65" class="secondBtn">音响</a></li><li><a href="http://www.zhihuiup.com/toWebGoodsPage/hotSale#" data-id="106" class="secondBtn">移动电源</a></li>
+                        <li><a href="http://www.zhihuiup.com/toWebGoodsPage/hotSale#" data-id="72" class="secondBtn">3D眼镜（VR）</a></li><li><a href="http://www.zhihuiup.com/toWebGoodsPage/hotSale#" data-id="301" class="secondBtn">键盘</a></li><li><a href="http://www.zhihuiup.com/toWebGoodsPage/hotSale#" data-id="302" class="secondBtn">鼠标</a></li><li><a href="http://www.zhihuiup.com/toWebGoodsPage/hotSale#" data-id="114" class="secondBtn">充电器</a></li><li><a href="http://www.zhihuiup.com/toWebGoodsPage/hotSale#" data-id="321" class="secondBtn">智能U盘</a></li><li><a href="http://www.zhihuiup.com/toWebGoodsPage/hotSale#" data-id="332" class="secondBtn">数据线.</a></li><li><a href="http://www.zhihuiup.com/toWebGoodsPage/hotSale#" data-id="125" class="secondBtn">鼠标垫</a></li><li><a href="http://www.zhihuiup.com/toWebGoodsPage/hotSale#" data-id="303" class="secondBtn">笔记本电脑</a></li><li><a href="http://www.zhihuiup.com/toWebGoodsPage/hotSale#" data-id="110" class="secondBtn">智能眼镜</a></li><li><a href="http://www.zhihuiup.com/toWebGoodsPage/hotSale#" data-id="104" class="secondBtn">智能手机壳</a></li><li><a href="http://www.zhihuiup.com/toWebGoodsPage/hotSale#" data-id="163" class="secondBtn">智能吉他</a></li><li><a href="http://www.zhihuiup.com/toWebGoodsPage/hotSale#" data-id="333" class="secondBtn">打印机</a></li><li><a href="http://www.zhihuiup.com/toWebGoodsPage/hotSale#" data-id="143" class="secondBtn">电子白板</a></li></ul>
+
+                <!--第五个智能数码-->
+
+                <ul class="categoryDetail clearfix" name="four"><li><a href="http://www.zhihuiup.com/toWebGoodsPage/hotSale#" data-id="86" class="secondBtn">路由器</a></li><li><a href="http://www.zhihuiup.com/toWebGoodsPage/hotSale#" data-id="291" class="secondBtn">自拍杆</a></li><li><a href="http://www.zhihuiup.com/toWebGoodsPage/hotSale#" data-id="65" class="secondBtn">音响</a></li><li><a href="http://www.zhihuiup.com/toWebGoodsPage/hotSale#" data-id="106" class="secondBtn">移动电源</a></li><li><a href="http://www.zhihuiup.com/toWebGoodsPage/hotSale#" data-id="66" class="secondBtn">耳机</a></li><li><a href="http://www.zhihuiup.com/toWebGoodsPage/hotSale#" data-id="63" class="secondBtn">相机</a></li><li><a href="http://www.zhihuiup.com/toWebGoodsPage/hotSale#" data-id="331" class="secondBtn">机器人（玩具类）</a></li><li><a href="http://www.zhihuiup.com/toWebGoodsPage/hotSale#" data-id="71" class="secondBtn">游戏机</a></li><li><a href="http://www.zhihuiup.com/toWebGoodsPage/hotSale#" data-id="68" class="secondBtn">机器人（陪伴类）</a></li><li><a href="http://www.zhihuiup.com/toWebGoodsPage/hotSale#" data-id="72" class="secondBtn">3D眼镜（VR）</a></li><li><a href="http://www.zhihuiup.com/toWebGoodsPage/hotSale#" data-id="301" class="secondBtn">键盘</a></li><li><a href="http://www.zhihuiup.com/toWebGoodsPage/hotSale#" data-id="302" class="secondBtn">鼠标</a></li><li><a href="http://www.zhihuiup.com/toWebGoodsPage/hotSale#" data-id="114" class="secondBtn">充电器</a></li><li><a href="http://www.zhihuiup.com/toWebGoodsPage/hotSale#" data-id="321" class="secondBtn">智能U盘</a></li><li><a href="http://www.zhihuiup.com/toWebGoodsPage/hotSale#" data-id="332" class="secondBtn">数据线.</a></li><li><a href="http://www.zhihuiup.com/toWebGoodsPage/hotSale#" data-id="125" class="secondBtn">鼠标垫</a></li><li><a href="http://www.zhihuiup.com/toWebGoodsPage/hotSale#" data-id="303" class="secondBtn">笔记本电脑</a></li><li><a href="http://www.zhihuiup.com/toWebGoodsPage/hotSale#" data-id="110" class="secondBtn">智能眼镜</a></li><li><a href="http://www.zhihuiup.com/toWebGoodsPage/hotSale#" data-id="104" class="secondBtn">智能手机壳</a></li><li><a href="http://www.zhihuiup.com/toWebGoodsPage/hotSale#" data-id="163" class="secondBtn">智能吉他</a></li><li><a href="http://www.zhihuiup.com/toWebGoodsPage/hotSale#" data-id="333" class="secondBtn">打印机</a></li><li><a href="http://www.zhihuiup.com/toWebGoodsPage/hotSale#" data-id="143" class="secondBtn">电子白板</a></li></ul>
+
+                <!--智能宠物设备-->
+
+                <ul class="categoryDetail clearfix" name="five"><li><a href="http://www.zhihuiup.com/toWebGoodsPage/hotSale#" data-id="86" class="secondBtn">路由器</a></li><li><a href="http://www.zhihuiup.com/toWebGoodsPage/hotSale#" data-id="291" class="secondBtn">自拍杆</a></li><li><a href="http://www.zhihuiup.com/toWebGoodsPage/hotSale#" data-id="65" class="secondBtn">音响</a></li><li><a href="http://www.zhihuiup.com/toWebGoodsPage/hotSale#" data-id="106" class="secondBtn">移动电源</a></li><li><a href="http://www.zhihuiup.com/toWebGoodsPage/hotSale#" data-id="66" class="secondBtn">耳机</a></li><li><a href="http://www.zhihuiup.com/toWebGoodsPage/hotSale#" data-id="63" class="secondBtn">相机</a></li><li><a href="http://www.zhihuiup.com/toWebGoodsPage/hotSale#" data-id="331" class="secondBtn">机器人（玩具类）</a></li><li><a href="http://www.zhihuiup.com/toWebGoodsPage/hotSale#" data-id="71" class="secondBtn">游戏机</a></li><li><a href="http://www.zhihuiup.com/toWebGoodsPage/hotSale#" data-id="68" class="secondBtn">机器人（陪伴类）</a></li><li><a href="http://www.zhihuiup.com/toWebGoodsPage/hotSale#" data-id="72" class="secondBtn">3D眼镜（VR）</a></li><li><a href="http://www.zhihuiup.com/toWebGoodsPage/hotSale#" data-id="301" class="secondBtn">键盘</a></li><li><a href="http://www.zhihuiup.com/toWebGoodsPage/hotSale#" data-id="302" class="secondBtn">鼠标</a></li><li><a href="http://www.zhihuiup.com/toWebGoodsPage/hotSale#" data-id="114" class="secondBtn">充电器</a></li><li><a href="http://www.zhihuiup.com/toWebGoodsPage/hotSale#" data-id="321" class="secondBtn">智能U盘</a></li><li><a href="http://www.zhihuiup.com/toWebGoodsPage/hotSale#" data-id="332" class="secondBtn">数据线.</a></li><li><a href="http://www.zhihuiup.com/toWebGoodsPage/hotSale#" data-id="125" class="secondBtn">鼠标垫</a></li><li><a href="http://www.zhihuiup.com/toWebGoodsPage/hotSale#" data-id="303" class="secondBtn">笔记本电脑</a></li><li><a href="http://www.zhihuiup.com/toWebGoodsPage/hotSale#" data-id="110" class="secondBtn">智能眼镜</a></li><li><a href="http://www.zhihuiup.com/toWebGoodsPage/hotSale#" data-id="104" class="secondBtn">智能手机壳</a></li><li><a href="http://www.zhihuiup.com/toWebGoodsPage/hotSale#" data-id="163" class="secondBtn">智能吉他</a></li><li><a href="http://www.zhihuiup.com/toWebGoodsPage/hotSale#" data-id="333" class="secondBtn">打印机</a></li><li><a href="http://www.zhihuiup.com/toWebGoodsPage/hotSale#" data-id="143" class="secondBtn">电子白板</a></li></ul>
+
+                <!--智能家电-->
+
+                <ul class="categoryDetail clearfix" name="six"><li><a href="http://www.zhihuiup.com/toWebGoodsPage/hotSale#" data-id="86" class="secondBtn">路由器</a></li><li><a href="http://www.zhihuiup.com/toWebGoodsPage/hotSale#" data-id="291" class="secondBtn">自拍杆</a></li>
+                    </ul>
+
+                <!--智能店铺-->
+
+                <ul class="categoryDetail clearfix" name="seven"><li><a href="http://www.zhihuiup.com/toWebGoodsPage/hotSale#" data-id="86" class="secondBtn">路由器</a></li>
+                        <li><a href="http://www.zhihuiup.com/toWebGoodsPage/hotSale#" data-id="303" class="secondBtn">笔记本电脑</a></li><li><a href="http://www.zhihuiup.com/toWebGoodsPage/hotSale#" data-id="110" class="secondBtn">智能眼镜</a></li><li><a href="http://www.zhihuiup.com/toWebGoodsPage/hotSale#" data-id="104" class="secondBtn">智能手机壳</a></li><li><a href="http://www.zhihuiup.com/toWebGoodsPage/hotSale#" data-id="163" class="secondBtn">智能吉他</a></li><li><a href="http://www.zhihuiup.com/toWebGoodsPage/hotSale#" data-id="333" class="secondBtn">打印机</a></li><li><a href="http://www.zhihuiup.com/toWebGoodsPage/hotSale#" data-id="143" class="secondBtn">电子白板</a></li></ul>
+
+
+                <ul class="categoryDetail clearfix" name="eight"><li><a href="http://www.zhihuiup.com/toWebGoodsPage/hotSale#" data-id="86" class="secondBtn">路由器</a></li>
+                        <li><a href="http://www.zhihuiup.com/toWebGoodsPage/hotSale#" data-id="303" class="secondBtn">笔记本电脑</a></li><li><a href="http://www.zhihuiup.com/toWebGoodsPage/hotSale#" data-id="110" class="secondBtn">智能眼镜</a></li><li><a href="http://www.zhihuiup.com/toWebGoodsPage/hotSale#" data-id="104" class="secondBtn">智能手机壳</a></li><li><a href="http://www.zhihuiup.com/toWebGoodsPage/hotSale#" data-id="163" class="secondBtn">智能吉他</a></li><li><a href="http://www.zhihuiup.com/toWebGoodsPage/hotSale#" data-id="333" class="secondBtn">打印机</a></li><li><a href="http://www.zhihuiup.com/toWebGoodsPage/hotSale#" data-id="143" class="secondBtn">电子白板</a></li></ul>
+
+            </div>
+        </div>
+        <!--内容部分-->
+
+        <!--精选推荐-->
+        <div class="clearfix titleStyle">
+            <div class="clearfix fl goodsTitle">
+                <div class="fl clearfix switchTitle titleFocus" id="allGoodsBtn">
+                    <div class="fl hotText">精选推荐</div>
+                    <div class="titleArrowUp fl "></div>
+                </div>
+                <div class="fl clearfix switchTitle" id="hotGoodsBtn">
+                    <div class="fl hotText">热门产品</div>
+                    <div class="titleArrowDown fl"></div>
+                </div>
+                <div class="fl clearfix switchTitle" id="newGoodsBtn">
+                    <div class="fl hotText">最新产品</div>
+                    <div class="titleArrowDown fl"></div>
+                </div>
+            </div>
+            <div class="fr proword">
+                共<span id="totalnum">493</span>个商品<span class="MLR10">&lt;</span>
+                <span id="nowpage" class="yellowText">1</span><span class="MLR10">/</span>
+                <span id="allpage">31</span><span class="MLR10">&gt;</span>
+            </div>
+        </div>
+
+        <!--商品部分-->
+        <div class="hotSale">
+            <div class="hotSalestyle">
+                <div class="hotList">
+                    <div class="item   gogoods" data-id="1000931">
+                        <div class="reMaiCover positionR">
+                            <div class="hotPic">
+                                <img src="./images/index.image/wKgomljKCEKAOMynAAA8bbgf5mA194.jpg" class="width100P">
+                            </div>
+                        </div>
+                        <div class="hotWord">
+                            <p class="hotWordp" title="特洛克Trozk 柠萌U站智能插座 创意智能插座 USB充电 防雷防触电">￥79 </p>
+                            <div class="textEllips hotWordd">
+                                特洛克Trozk 柠萌U站智能插座
+                                创意智能插座 USB充电 防雷防触电
+                            </div>
+                            <p></p>
+                        </div>
+                    </div>
+                    <!--循环后下面div都要删-->
+                    <div class="item   gogoods" data-id="1000930">
+                        <div class="reMaiCover positionR">
+                            <div class="hotPic">
+                                <img src="./images/index.image/wKgomljKBQ6ASZdIAAAY9oF1nhk104.jpg" class="width100P">
+                            </div>
+                        </div>
+                        <div class="hotWord"><p class="hotWordp" title="ROOME 智能晚安灯普通版 床头灯3D手势控制 感应唤醒LED灯">￥399 </p>
+                            <div class="textEllips hotWordd">
+                                ROOME 智能晚安灯普通版
+                                床头灯3D手势控制 感应唤醒LED灯
+                            </div>
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="item   gogoods" data-id="1000925">
+                        <div class="reMaiCover positionR">
+                            <div class="hotPic">
+                                <img src="./images/index.image/wKgomljI9R6AB63JAAFoLg2KRPc188.jpg" class="width100P">
+                            </div>
+                        </div>
+                        <div class="hotWord"><p class="hotWordp" title="科大讯飞 阿尔法小蛋智能机器人 智能语音儿童玩具">￥699 </p>
+                            <div class=" textEllips hotWordd">
+                                科大讯飞 阿尔法小蛋智能机器人
+                                智能语音儿童玩具
+                            </div>
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="item   gogoods" data-id="1000860">
+                        <div class="reMaiCover positionR">
+                            <div class="hotPic">
+                                <img src="./images/index.image/wKgomli2NQCACeDDAABLNK5JmwI525.jpg" class="width100P"></div>
+                        </div>
+                        <div class="hotWord">
+                            <p class="hotWordp" title="lehoo乐喝喝 智能水杯 温度款">￥168 </p>
+                            <div class=" textEllips hotWordd">
+                                lehoo乐喝喝 智能水杯 温度款
+                            </div>
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="item   gogoods" data-id="1000931">
+                        <div class="reMaiCover positionR">
+                            <div class="hotPic">
+                                <img src="./images/index.image/wKgomljKCEKAOMynAAA8bbgf5mA194.jpg" class="width100P">
+                            </div>
+                        </div>
+                        <div class="hotWord">
+                            <p class="hotWordp" title="特洛克Trozk 柠萌U站智能插座 创意智能插座 USB充电 防雷防触电">￥79 </p>
+                            <div class="textEllips hotWordd">
+                                特洛克Trozk 柠萌U站智能插座
+                                创意智能插座 USB充电 防雷防触电
+                            </div>
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="item   gogoods" data-id="1000931">
+                        <div class="reMaiCover positionR">
+                            <div class="hotPic">
+                                <img src="./images/index.image/wKgomljKCEKAOMynAAA8bbgf5mA194.jpg" class="width100P">
+                            </div>
+                        </div>
+                        <div class="hotWord">
+                            <p class="hotWordp" title="特洛克Trozk 柠萌U站智能插座 创意智能插座 USB充电 防雷防触电">￥79 </p>
+                            <div class="textEllips hotWordd">
+                                特洛克Trozk 柠萌U站智能插座
+                                创意智能插座 USB充电 防雷防触电
+                            </div>
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="item   gogoods" data-id="1000931">
+                        <div class="reMaiCover positionR">
+                            <div class="hotPic">
+                                <img src="./images/index.image/wKgomljKCEKAOMynAAA8bbgf5mA194.jpg" class="width100P">
+                            </div>
+                        </div>
+                        <div class="hotWord">
+                            <p class="hotWordp" title="特洛克Trozk 柠萌U站智能插座 创意智能插座 USB充电 防雷防触电">￥79 </p>
+                            <div class="textEllips hotWordd">
+                                特洛克Trozk 柠萌U站智能插座
+                                创意智能插座 USB充电 防雷防触电
+                            </div>
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="item   gogoods" data-id="1000931">
+                        <div class="reMaiCover positionR">
+                            <div class="hotPic">
+                                <img src="./images/index.image/wKgomljKCEKAOMynAAA8bbgf5mA194.jpg" class="width100P">
+                            </div>
+                        </div>
+                        <div class="hotWord">
+                            <p class="hotWordp" title="特洛克Trozk 柠萌U站智能插座 创意智能插座 USB充电 防雷防触电">￥79 </p>
+                            <div class="textEllips hotWordd">
+                                特洛克Trozk 柠萌U站智能插座
+                                创意智能插座 USB充电 防雷防触电
+                            </div>
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="item   gogoods" data-id="1000931">
+                        <div class="reMaiCover positionR">
+                            <div class="hotPic">
+                                <img src="./images/index.image/wKgomljKCEKAOMynAAA8bbgf5mA194.jpg" class="width100P">
+                            </div>
+                        </div>
+                        <div class="hotWord">
+                            <p class="hotWordp" title="特洛克Trozk 柠萌U站智能插座 创意智能插座 USB充电 防雷防触电">￥79 </p>
+                            <div class="textEllips hotWordd">
+                                特洛克Trozk 柠萌U站智能插座
+                                创意智能插座 USB充电 防雷防触电
+                            </div>
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="item   gogoods" data-id="1000931">
+                        <div class="reMaiCover positionR">
+                            <div class="hotPic">
+                                <img src="./images/index.image/wKgomljKCEKAOMynAAA8bbgf5mA194.jpg" class="width100P">
+                            </div>
+                        </div>
+                        <div class="hotWord">
+                            <p class="hotWordp" title="特洛克Trozk 柠萌U站智能插座 创意智能插座 USB充电 防雷防触电">￥79 </p>
+                            <div class="textEllips hotWordd">
+                                特洛克Trozk 柠萌U站智能插座
+                                创意智能插座 USB充电 防雷防触电
+                            </div>
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="item   gogoods" data-id="1000931">
+                        <div class="reMaiCover positionR">
+                            <div class="hotPic">
+                                <img src="./images/index.image/wKgomljKCEKAOMynAAA8bbgf5mA194.jpg" class="width100P">
+                            </div>
+                        </div>
+                        <div class="hotWord">
+                            <p class="hotWordp" title="特洛克Trozk 柠萌U站智能插座 创意智能插座 USB充电 防雷防触电">￥79 </p>
+                            <div class="textEllips hotWordd">
+                                特洛克Trozk 柠萌U站智能插座
+                                创意智能插座 USB充电 防雷防触电
+                            </div>
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="item   gogoods" data-id="1000931">
+                        <div class="reMaiCover positionR">
+                            <div class="hotPic">
+                                <img src="./images/index.image/wKgomljKCEKAOMynAAA8bbgf5mA194.jpg" class="width100P">
+                            </div>
+                        </div>
+                        <div class="hotWord">
+                            <p class="hotWordp" title="特洛克Trozk 柠萌U站智能插座 创意智能插座 USB充电 防雷防触电">￥79 </p>
+                            <div class="textEllips hotWordd">
+                                特洛克Trozk 柠萌U站智能插座
+                                创意智能插座 USB充电 防雷防触电
+                            </div>
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="btn">1</button><button class="btn">2</button>
+    </div>
+</div>
+<!--脚步样式-->
+<footer>
+    <div class="fbox">
+        <div><img src="./images/header/footLight.png"></div>
+        <div class="foot-word"><span>智仟汇/better choice</span></div>
+        <div class="icon-box clearfix">
+            <dl>
+                <dt><img src="./images/header/footIcon1.png" alt=""></dt>
+                <dd>
+                    <p>全球精选</p>
+                    <p>Global Select</p>
+                </dd>
+            </dl>
+            <dl>
+                <dt><img src="./images/header/footIcon2.png" alt=""></dt>
+                <dd>
+                    <p>急速物流</p>
+                    <p>Rapid Logistics</p>
+                </dd>
+            </dl>
+            <dl>
+                <dt><img src="./images/header/footIcon3.png" alt=""></dt>
+                <dd>
+                    <p>正品保证</p>
+                    <p>Quality Assurance</p>
+                </dd>
+            </dl>
+            <dl>
+                <dt><img src="./images/header/footIcon4.png" alt=""></dt>
+                <dd>
+                    <p>无忧售后</p>
+                    <p>Worry-free After-sales</p>
+                </dd>
+            </dl>
+        </div>
+    </div>
+    <div class="foot-line"></div>
+    <div class="fbox clearfix">
+        <div class="foot-left fl">
+            <div class="clearfix">
+                <img src="./images/header/footTel.png" class="fl">
+                <div class="fl">
+                    <p class="client">Ios/Android</p>
+                    <p class="client">智仟汇客户端下载</p>
+                </div>
+            </div>
+            <div>
+                <p class="brief">Copyright © 2017 zhihuiup.com 版权所有| 购买需谨慎 渝ICP备16009922号-1</p>
+                <p>公司：重庆智豆电子商务有限公司</p>
+            </div>
+        </div>
+        <div class="foot-right fr">
+            <p>公司地址：重庆市渝中区化龙桥企业天地2号楼18-1</p>
+            <p class="about-me">联系我们</p>
+            <p class="tel">客服电话:4000-999-508</p>
+        </div>
+    </div>
+</footer>
+
+<div class="screen hide">
+   <div class="j_exit exit"></div>
+    <div class="login-screen show">
+        <div class="logo-login"></div>
+        <form class="form">
+            <p>
+                <input type="text" class="input" placeholder="请输入用户名">
+            </p>
+            <p>
+                <input type="password" class="input" placeholder="请输入密码">
+            </p>
+            <p>
+                <span>没有账号 ?</span><span class="j_register color">&nbsp;立即注册</span>
+            </p>
+            <button class="btn-login">
+                立即登录
+            </button>
+        </form>
+    </div>
+
+    <div class="register-screen hide">
+        <div class="logo-login"></div>
+        <form class="form">
+            <p>
+                <input type="text" class="input" placeholder="请输入用户名">
+            </p>
+            <p>
+                <input type="password" class="input" placeholder="请输入密码">
+            </p>
+            <p>
+                <input type="password" class="input" placeholder="请再次输入密码">
+            </p>
+            <p>
+                <input type="tel" class="input" placeholder="请输入手机号">
+            </p>
+            <div class="clearfix">
+                <div class="fl">
+                    <input type="checkbox" id="checkbox" checked='checked'>
+                    <label for="checkbox"></label>
+                    <span>我已阅读并同意</span>
+                    <span class="color">智仟汇用户注册协议</span>
+                </div>
+                <div class="fr">
+                    <span>已有账号？</span><span class="j_login color">立即登录</span>
+                </div>
+            </div>
+            <button class="btn-login">
+                立即注册
+            </button>
+        </form>
+    </div>
+</div>
+<script src="static/components/jquery/dist/jquery.js"></script>
+<script src="js/shop.js"></script>
+<script src="./js/common.js"></script>
+
+</body>
+</html>

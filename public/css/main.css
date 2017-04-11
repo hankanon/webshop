@@ -1,0 +1,346 @@
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #0b0b0b;
+  height: 78px;
+  z-index: 100;
+  overflow: hidden;
+  font-family: "Microsoft YaHei";
+  font-size: 14px;
+}
+.hbox {
+  width: 80%;
+  margin: 0 auto;
+  padding: 15px 0;
+}
+.hbox img {
+  vertical-align: middle;
+}
+.nav {
+  padding: 15px 30px;
+}
+.nav li {
+  float: left;
+}
+.nav li a {
+  color: white;
+  padding: 15px 20px;
+}
+.nav li a:hover {
+  color: #fabf2a;
+}
+.login-box {
+  padding: 15px 0;
+}
+.login-box li {
+  float: left;
+  padding: 0 10px;
+  border-left: 1px solid #fabf2a;
+}
+.login-box li a,
+.login-box li span,
+.login-box li i {
+  padding: 15px 10px;
+  color: #fabf2a;
+  cursor: pointer;
+}
+.login-box li a {
+  background: url("../images/header/person.png") no-repeat;
+  background-position: 3px 15px;
+}
+.login-box li span {
+  background: url("../images/header/search.png") no-repeat;
+  background-position: 3px 15px;
+}
+.login-box li .int-search {
+  background: #0b0b0b;
+  border: none;
+  border-width: 0;
+  color: white;
+  padding-right: 4px;
+  width: 0px;
+  transition: width 1.2s;
+}
+.login-box li .int-search:hover {
+  width: 150px;
+  transition: width 1.2s;
+}
+.login-box li + li {
+  border-right: 1px solid #fabf2a;
+}
+footer {
+  font-family: "Microsoft YaHei";
+  background-color: #0b0b0b;
+  text-align: center;
+  padding: 20px 0;
+}
+footer .fbox {
+  width: 80%;
+  margin: 0 auto;
+}
+footer .fbox .foot-word {
+  margin-top: 15px;
+  color: #B2B2B2;
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-size: 18px;
+}
+.icon-box {
+  margin-top: 30px;
+}
+.icon-box dl {
+  float: left;
+  color: #7f7746;
+  margin: 0 20px;
+  font-size: 16px;
+  width: 240px;
+}
+.icon-box dl dt {
+  float: left;
+}
+.icon-box dl dt img {
+  width: 47px;
+  height: 47px;
+}
+.icon-box dl dd {
+  float: left;
+  padding-left: 10px;
+}
+.icon-box dl dd p {
+  text-align: left;
+}
+.foot-line {
+  width: 100%;
+  height: 1px;
+  margin-top: 30px;
+  border-top: 1px dashed #303030;
+}
+.foot-left {
+  font-size: 16px;
+  color: #666;
+  width: 50%;
+  margin: 30px 20px;
+  text-align: left;
+}
+.foot-left .client {
+  margin-left: 15px;
+  padding-top: 6px;
+}
+.foot-left .brief {
+  padding: 10px 0;
+  font-size: 12px;
+  line-height: 24px;
+}
+.foot-right {
+  width: 35%;
+  font-size: 16px;
+  color: #666;
+  margin: 30px 20px;
+  text-align: left;
+}
+.foot-right p {
+  line-height: 35px;
+}
+.foot-right .about-me {
+  margin-top: 20px;
+}
+.foot-right .tel {
+  margin-top: 5px;
+  font-size: 24px;
+}
+/*右边*/
+.right-bar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 40px;
+  height: 100vh;
+  background: rgba(4, 3, 3, 0.8);
+  z-index: 300;
+}
+/*登录注册的样式*/
+.show-screen {
+  z-index: 10000;
+  display: block;
+  transition: height 1.2s;
+  animation: load 2s forwards;
+}
+@keyframes load {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    top: -700px;
+    opacity: 1;
+    height: 10%;
+  }
+  100% {
+    height: 100%;
+    opacity: 1;
+    filter: alpha(opacity=100);
+    -moz-opacity: 1;
+  }
+}
+@keyframes up {
+  0% {
+    top: 0;
+    opacity: 1;
+    height: 100%;
+  }
+  100% {
+    height: 0;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -moz-opacity: 0;
+    top: -1200px;
+    display: none;
+  }
+}
+.hide-screen {
+  animation: up 2s forwards;
+}
+.screen {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  z-index: 999;
+  background-color: #000;
+}
+.screen .exit {
+  width: 28px;
+  height: 28px;
+  position: absolute;
+  right: 10%;
+  top: 10%;
+  cursor: pointer;
+  background: url(../images/header/outBtn.png) no-repeat center center;
+}
+.register-screen,
+.login-screen {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 500px;
+  height: 500px;
+  margin: auto;
+  color: #d2d2d2;
+}
+.register-screen .logo-login,
+.login-screen .logo-login {
+  width: 175px;
+  height: 72px;
+  background: url(../images/header/logo-login.png) no-repeat center center;
+  margin: 0 auto 20px;
+}
+.register-screen form,
+.login-screen form {
+  font-family: Arial;
+}
+.register-screen form .input,
+.login-screen form .input {
+  border: none;
+  outline: medium;
+  background: #000;
+  width: 100%;
+  height: 35px;
+  font-size: 16px;
+  border-bottom: 1px solid #808080;
+  text-indent: 2px;
+  letter-spacing: 1px;
+  margin-top: 22px;
+  color: white;
+  font-family: Arial;
+}
+.register-screen form input::-webkit-input-placeholder,
+.login-screen form input::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: #fff;
+}
+.register-screen form input::-moz-placeholder,
+.login-screen form input::-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #fff;
+}
+.register-screen form input:-ms-input-placeholder,
+.login-screen form input:-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  color: #fff;
+}
+.register-screen form input:focus,
+.login-screen form input:focus {
+  border-bottom: 1px solid #ffffff;
+}
+.register-screen form input[type='checkbox'],
+.login-screen form input[type='checkbox'] {
+  display: none;
+}
+.register-screen form input[type='checkbox']:checked + label:before,
+.login-screen form input[type='checkbox']:checked + label:before {
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  background: #fabf2a;
+  border: 4px solid #fff;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+.register-screen form label,
+.login-screen form label {
+  margin-right: 15px;
+}
+.register-screen form label:before,
+.login-screen form label:before {
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #DDD;
+  border-radius: 50%;
+  background-color: #fff;
+  vertical-align: middle;
+}
+.register-screen form span,
+.login-screen form span {
+  display: inline-block;
+  height: 35px;
+  margin-top: 22px;
+  font-size: 14px;
+}
+.register-screen form .color,
+.login-screen form .color {
+  color: #fabf2a;
+  cursor: pointer;
+}
+.register-screen form .btn-login,
+.login-screen form .btn-login {
+  display: block;
+  width: 292px;
+  height: 48px;
+  background: #BEBEBE;
+  line-height: 48px;
+  border-radius: 4px;
+  margin: 40px auto 0;
+  letter-spacing: 4px;
+  cursor: pointer;
+  text-decoration: none;
+  border-width: 0;
+  color: white;
+  font-size: 18px;
+  font-family: Arial;
+}
+.register-screen form .pon-right,
+.login-screen form .pon-right {
+  margin-left: 60px;
+}
+.hide {
+  display: none;
+}
+.show {
+  display: block;
+}

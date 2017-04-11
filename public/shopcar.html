@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>购物车</title>
+    <link rel="stylesheet" href="css/reset1.css"/>
+    <link rel="stylesheet" href="css/shopcar.css"/>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+<!--头部样式-->
+<header>
+    <div class="hbox clearfix">
+        <div class="logo-box fl">
+            <img src="./images/header/Logo.png" alt="智仟汇">
+            <img src="./images/header/LogoWord.png" alt="智仟汇">
+        </div>
+        <ul class="nav fl" >
+            <ul class="nav fl" >
+                <li><a href="/">首页</a></li>
+                <li><a href="/product">商城</a></li>
+                <!--<li><a href="">资讯</a></li>-->
+                <!--<li><a href="">智慧+</a></li>-->
+                <!--<li><a href="">品牌街</a></li>-->
+                <li><a href="./about.html">关于我们</a></li>
+                <li><a href="./downLoad.html">下载APP</a></li>
+            </ul>
+        </ul>
+        <ul class="login-box fr">
+            <li><input type="text" class="int-search" placeholder="请输入您查找的内容"><span class="search"></span></li>
+            <li><a class="j_showScreen"></a></li>
+            <li><i class="j_tuichu">注销</i></li>
+        </ul>
+    </div>
+</header>
+<!--shopcar-->
+<div class="container">
+    <div class="shopCar">
+        <div class="shopCarTitle">
+            <a href="#">首页</a>
+            <span>&gt;</span>
+            <a href="#">购物车</a>
+        </div>
+        <div class="shopCarList">
+            <table>
+                <thead>
+                    <tr>
+                        <th><input type="checkbox"/>全选</th>
+                        <th></th>
+                        <th>商品信息</th>
+                        <th>商品规格</th>
+                        <th>单元（元）</th>
+                        <th>数量</th>
+                        <th>金额</th>
+                        <th>操作</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                       <td><input type="checkbox"/></td>
+                        <td class="img">
+                            <img src="images/shopcar/wKgomljKDSOAIkcZAAAi1dgyTEM261.jpg" alt="商品1"/>
+                        </td>
+                        <td class="shopInfo">
+                            <p>特洛克Trozk 柠萌U站智能插座 创意智能插座 USB充电 防雷防触电</p>
+                        </td>
+                        <td>
+                            <p>橙色</p>
+                        </td>
+                        <td>
+                            <p>￥79.00</p>
+                        </td>
+                        <td class="shopChoice">
+                            <p>
+                                <select>
+                                    <option value="">橙色</option>
+                                </select>
+                            </p>
+                            <p>
+                                <button>-</button>
+                                <input type="text" value="1"/>
+                                <button>+</button>
+                            </p>
+                        </td>
+                        <td class="red">
+                            <p>￥79.00</p>
+                        </td>
+                        <td>
+                            <img src="images/shopcar/1.png" alt="垃圾桶"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"/></td>
+                        <td class="img">
+                            <img src="images/shopcar/wKgomljSMcKAQojnAAAfJoXvNi8629.jpg" alt="商品2"/>
+                        </td>
+                        <td class="shopInfo">
+                            <p>微软 通用折叠键盘</p>
+                        </td>
+                        <td>
+                            <p>GU5-00015黑色</p>
+                        </td>
+                        <td>
+                            <p>￥689.00</p>
+                        </td>
+                        <td class="shopChoice">
+                            <p>
+                                <select>
+                                    <option value="">GU5-00...</option>
+                                </select>
+                            </p>
+                            <p>
+                                <button>-</button>
+                                <input type="text" value="1"/>
+                                <button>+</button>
+                            </p>
+                        </td>
+                        <td class="red">
+                            <p>￥689.00</p>
+                        </td>
+                        <td>
+                            <img src="images/shopcar/1.png" alt="垃圾桶"/>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="shopCarBottom">
+                <div class="fl shopCarBottomLt">
+                    <div class="fr shopCarBottomText">
+                        <p class="totalPrice">
+                            总价(不含运费):&nbsp;&nbsp;
+                            <span>0.00</span>
+                        </p>
+                        <p class="totalAmount">
+                            已选商品
+                            <span>0</span>
+                            件
+                        </p>
+                    </div>
+                </div>
+                <div class="fr shopCarBottomRt">
+                    <a href="#">去结算</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--脚步样式-->
+<footer>
+    <div class="fbox">
+        <div><img src="./images/header/footLight.png"></div>
+        <div class="foot-word"><span>智仟汇/better choice</span></div>
+        <div class="icon-box clearfix">
+            <dl>
+                <dt><img src="./images/header/footIcon1.png" alt=""></dt>
+                <dd>
+                    <p>全球精选</p>
+                    <p>Global Select</p>
+                </dd>
+            </dl>
+            <dl>
+                <dt><img src="./images/header/footIcon2.png" alt=""></dt>
+                <dd>
+                    <p>急速物流</p>
+                    <p>Rapid Logistics</p>
+                </dd>
+            </dl>
+            <dl>
+                <dt><img src="./images/header/footIcon3.png" alt=""></dt>
+                <dd>
+                    <p>正品保证</p>
+                    <p>Quality Assurance</p>
+                </dd>
+            </dl>
+            <dl>
+                <dt><img src="./images/header/footIcon4.png" alt=""></dt>
+                <dd>
+                    <p>无忧售后</p>
+                    <p>Worry-free After-sales</p>
+                </dd>
+            </dl>
+        </div>
+    </div>
+    <div class="foot-line"></div>
+    <div class="fbox clearfix">
+        <div class="foot-left fl">
+            <div class="clearfix">
+                <img src="./images/header/footTel.png" class="fl">
+                <div class="fl">
+                    <p class="client">Ios/Android</p>
+                    <p class="client">智仟汇客户端下载</p>
+                </div>
+            </div>
+            <div>
+                <p class="brief">Copyright © 2017 zhihuiup.com 版权所有| 购买需谨慎 渝ICP备16009922号-1</p>
+                <p>公司：重庆智豆电子商务有限公司</p>
+            </div>
+        </div>
+        <div class="foot-right fr">
+            <p>公司地址：重庆市渝中区化龙桥企业天地2号楼18-1</p>
+            <p class="about-me">联系我们</p>
+            <p class="tel">客服电话:4000-999-508</p>
+        </div>
+    </div>
+</footer>
+
+<script src="static/components/jquery/dist/jquery.js"></script>
+<script src="./js/common.js"></script>
+
+</body>
+</html>

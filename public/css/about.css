@@ -1,0 +1,236 @@
+/*
+*about banner ��������  �ֲ�
+//*/
+.swiper-container {
+  width: 100%;
+  height: 600px;
+  margin-top: 70px;
+}
+.swiper-container .left,
+.swiper-container .right {
+  display: none;
+}
+.aboutLunBo:hover > .left,
+.aboutLunBo:hover > .right {
+  display: block;
+}
+/*
+*about content ��������  ����
+*/
+div.aboutContent:nth-child(2n+1) {
+  background-color: #f5f5f5;
+}
+.aboutContent {
+  padding-top: 45px;
+  padding-bottom: 67px;
+  padding-left: 10%;
+  padding-right: 10%;
+  font-family: "Microsoft YaHei";
+}
+.aboutContent .aboutTitle {
+  width: 100%;
+}
+.aboutContent .aboutTitle .aboutInfoTitle {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+}
+.aboutContent .aboutTitle .aboutInfoTitle .yellowLine {
+  float: left;
+  width: 5px;
+  height: 26px;
+  background-color: #f5d500;
+  margin-right: 20px;
+  margin-top: 7px;
+}
+.aboutContent .aboutTitle .aboutInfoTitle .aboutChTitle {
+  font-weight: bold;
+  text-indent: 10px;
+  font-size: 24px;
+  color: #191919;
+}
+.aboutContent .aboutTitle .aboutInfoTitle:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.aboutContent .aboutTitle .aboutInfoEgTitle {
+  padding-left: 20px;
+  color: #858585;
+  font-size: 24px;
+}
+.aboutContent .aboutTitle .aboutInfoEgTitle .strong {
+  font-weight: bold;
+}
+.aboutContent .aboutText {
+  width: 100%;
+  margin-top: 40px;
+  line-height: 30px;
+  font-size: 18px;
+  color: #666;
+  padding-left: 12px;
+}
+.aboutValue .aboutText {
+  margin-left: -12px;
+}
+.aboutValue .aboutText img {
+  width: 100%;
+  height: 300px;
+}
+.aboutCulture .aboutText .aboutTextLeft {
+  width: 55%;
+  height: 300px;
+  padding-left: 60px;
+}
+.aboutCulture .aboutText .aboutTextLeft .aboutTextUD .strongText {
+  margin-left: 15px;
+  font-size: 22px;
+  font-weight: bold;
+}
+.aboutCulture .aboutText .aboutTextLeft .aboutTextUD .borderLine {
+  width: 40px;
+  height: 0;
+  border-bottom: 1px solid #666;
+  margin-top: 15px;
+}
+.aboutCulture .aboutText .aboutTextLeft .aboutTextUD .bandText {
+  font-size: 20px;
+  line-height: 30px;
+}
+.aboutCulture .aboutText .aboutTextLeft .aboutTextUp {
+  margin-top: 75px;
+}
+.aboutCulture .aboutText .aboutTextLeft .aboutTextUp:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.aboutCulture .aboutText .aboutTextLeft .aboutTextDown {
+  margin-top: 35px;
+}
+.aboutCulture .aboutText .aboutTextLeft .aboutTextDown:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.aboutCulture .aboutText .aboutTextRight {
+  width: 45%;
+  height: 300px;
+}
+.aboutCulture .aboutText:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.aboutCharacter .aboutText {
+  margin-left: -12px;
+  display: flex;
+  justify-content: space-between;
+}
+.aboutCharacter .aboutText .aboutTextBox {
+  width: 32%;
+}
+.aboutCharacter .aboutText .aboutTextBox img {
+  width: 100%;
+  height: 210px;
+}
+.aboutCharacter .aboutText .aboutTextBox .char {
+  text-align: center;
+  line-height: 65px;
+}
+.aboutCharacter .aboutText .aboutTextBox .char .eg {
+  font-size: 22px;
+}
+.aboutCharacter .aboutText .aboutTextBox .char .num {
+  font-size: 26px;
+}
+.aboutCharacter .aboutText .aboutTextBox .borderLine {
+  width: 80%;
+  margin: 0 auto 20px;
+  border-bottom: 1px solid #c2c2c2;
+}
+.aboutCharacter .aboutText .aboutTextBox .aboutTextInfo {
+  width: 95%;
+  margin: 0 auto;
+  font-size: 16px;
+  line-height: 30px;
+}
+.aboutProduct .aboutText {
+  margin-bottom: 45px;
+  font-size: 16px;
+}
+.aboutProduct .aboutProducts {
+  display: flex;
+  justify-content: space-between;
+}
+.aboutProduct .aboutProducts .aboutProductImg {
+  width: 32.5%;
+  height: 350px;
+  border: 1px solid #eeeeee;
+  text-align: center;
+  position: relative;
+}
+.aboutProduct .aboutProducts .aboutProductImg .imgOne {
+  width: 100%;
+  position: absolute;
+  top: 23%;
+  left: 0;
+}
+.aboutProduct .aboutProducts .aboutProductImg .imgTwo {
+  width: 100%;
+  height: 100%;
+}
+.aboutProduct .aboutProducts .aboutProductImg .imgThree {
+  height: 100%;
+}
+.aboutSpread .aboutText {
+  margin-left: -12px;
+}
+.aboutSpread .aboutText .aboutBox {
+  width: 100%;
+  height: 250px;
+  background-color: #fff;
+  border: 1px solid #c6c6c6;
+}
+.aboutSpread .aboutText .aboutBox .aboutImg {
+  width: 40%;
+  height: 100%;
+  position: relative;
+}
+.aboutSpread .aboutText .aboutBox .aboutImg img {
+  width: 100%;
+  height: 100%;
+}
+.aboutSpread .aboutText .aboutBox .aboutImg .triangle {
+  width: 0;
+  height: 0;
+  border: 15px solid transparent;
+  border-right-color: #fff;
+  position: absolute;
+  top: 45%;
+  right: 0;
+  z-index: 2;
+}
+.aboutSpread .aboutText .aboutBox .aboutIntro {
+  margin-top: 35px;
+  margin-left: 10%;
+  font-size: 20px;
+  line-height: 45px;
+}
+.aboutSpread .aboutText .aboutBox:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.aboutMuseum .aboutText,
+.aboutCooperation .aboutText {
+  margin-left: -15px;
+}
+.aboutMuseum .aboutText img,
+.aboutCooperation .aboutText img {
+  width: 100%;
+  height: 300px;
+}
+div.aboutCooperation {
+  background-color: #fff !important;
+}

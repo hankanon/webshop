@@ -1,0 +1,346 @@
+@color-bg:rgb(11,11,11);
+@color-ye:#fabf2a;
+@color-white:white;
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: @color-bg;
+  height: 78px;
+  z-index: 100;
+  overflow: hidden;
+  font-family: "Microsoft YaHei";
+  font-size: 14px;
+}
+.hbox{
+  width: 80%;
+  margin: 0 auto;
+  padding: 15px 0;
+  img{
+    vertical-align: middle;
+  }
+}
+.nav{
+  padding: 15px 30px;
+  li{
+    float: left;
+    a{
+      color: @color-white;
+      padding: 15px 20px;
+    }
+    a:hover{
+      color:@color-ye;
+    }
+  }
+}
+.login-box{
+  padding: 15px 0;
+  li{
+    float: left;
+    padding: 0 10px;
+    border-left:1px solid @color-ye ;
+    a,span,i{
+      padding: 15px 10px;
+      color:@color-ye;
+      cursor: pointer;
+    }
+    a{
+      background: url("../images/header/person.png") no-repeat;
+      background-position: 3px 15px;
+    }
+    span{
+      background: url("../images/header/search.png") no-repeat;
+      background-position: 3px 15px;
+    }
+    .int-search{
+      background: @color-bg;
+      border: none;
+      border-width: 0;
+      color: @color-white;
+      padding-right: 4px;
+      width: 0px;
+      transition: width 1.2s;
+    }
+    .int-search:hover{
+      width: 150px;
+      transition: width 1.2s;
+    }
+  }
+  li+li{
+    border-right: 1px solid @color-ye;
+  }
+
+}
+
+footer{
+  font-family: "Microsoft YaHei";
+  background-color: @color-bg;
+  text-align: center;
+  padding: 20px 0;
+  .fbox{
+    width: 80%;
+    margin: 0 auto;
+    .foot-word{
+      margin-top: 15px;
+      color: #B2B2B2;
+      font-weight: bold;
+      letter-spacing: 2px;
+      font-size: 18px;
+    }
+  }
+
+}
+.icon-box{
+  margin-top: 30px;
+  dl{
+    float: left;
+    color: #7f7746;
+    margin: 0 20px;
+    font-size: 16px;
+    width: 240px;
+    dt{
+      float: left;
+      img{
+        width: 47px;
+        height: 47px;
+      }
+    }
+    dd{
+      float: left;
+      padding-left: 10px;
+      p{
+        text-align: left;
+      }
+    }
+  }
+}
+.foot-line{
+  width: 100%;
+  height: 1px;
+  margin-top: 30px;
+  border-top: 1px dashed rgb(48,48,48);
+}
+
+.foot-left{
+  font-size: 16px;
+  color: #666;
+  width: 50%;
+  margin: 30px 20px;
+  text-align: left;
+  .client{
+    margin-left: 15px;
+    padding-top: 6px;
+  }
+  .brief{
+    padding: 10px 0;
+    font-size: 12px;
+    line-height: 24px;
+  }
+}
+.foot-right{
+  width: 35%;
+  font-size: 16px;
+  color: #666;
+  margin: 30px 20px;
+  text-align: left;
+  p{
+    line-height: 35px;
+  }
+  .about-me{
+    margin-top: 20px;
+  }
+  .tel{
+    margin-top: 5px;
+    font-size: 24px;
+  }
+}
+/*右边*/
+.right-bar{
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 40px;
+  height: 100vh;
+  background: rgba(4,3,3,.8);
+  z-index: 300;
+}
+/*登录注册的样式*/
+.show-screen{
+  z-index: 10000;
+  display: block;
+  transition: height 1.2s;
+  animation: load 2s forwards;
+  //-khtml-opacity: 1;
+}
+@keyframes load {
+  0%{
+    opacity: 0;
+  }
+  10%{
+    top: -700px;
+    opacity: 1;
+    height: 10%;
+  }
+  100%{
+    height: 100%;
+    opacity: 1;
+    filter: alpha(opacity=100);
+    -moz-opacity: 1;
+  }
+}
+
+@keyframes up {
+  0%{
+    top: 0;
+    opacity: 1;
+    height: 100%;
+  }
+  //20%{
+  //  top: 0;
+  //  opacity: 1;
+  //  height: 100%;
+  //}
+  100%{
+    height: 0;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -moz-opacity: 0;
+    top: -1200px;
+    display: none;
+  }
+}
+.hide-screen{
+  animation: up 2s forwards;
+}
+.screen{
+  position: fixed;
+  left: 0;
+  top:0;
+  right: 0;
+  z-index: 999;
+
+  background-color: #000;
+  //-khtml-opacity: 0;
+  .exit{
+    width: 28px;
+    height: 28px;
+    position: absolute;
+    right: 10%;
+    top: 10%;
+    cursor: pointer;
+    background: url(../images/header/outBtn.png) no-repeat center center;
+  }
+
+}
+
+.register-screen,.login-screen{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 500px;
+  height: 500px;
+  margin: auto;
+  //border: 1px solid red;
+  color: #d2d2d2;
+  .logo-login{
+    width: 175px;
+    height: 72px;
+    background: url(../images/header/logo-login.png) no-repeat center center;
+    margin: 0 auto 20px;
+  }
+  form {
+    font-family: Arial;
+    .input {
+      border: none;
+      outline: medium;
+      background: #000;
+      width: 100%;
+      height: 35px;
+      font-size: 16px;
+      border-bottom: 1px solid #808080;
+      text-indent: 2px;
+      letter-spacing: 1px;
+      margin-top: 22px;
+      color: @color-white;
+      font-family: Arial;
+
+    }
+    input::-webkit-input-placeholder { /* WebKit browsers */
+      color:#fff;
+    }
+    input::-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+      color:#fff;
+    }
+    input:-ms-input-placeholder { /* Internet Explorer 10+ */
+      color:#fff;
+    }
+    input:focus{
+      border-bottom: 1px solid rgb(255,255,255);
+    }
+    input[type='checkbox']{
+      display: none;
+    }
+    input[type='checkbox']:checked+label:before {
+      content: "";
+      display: inline-block;
+      width: 18px;
+      height: 18px;
+      background: @color-ye;
+      border: 4px solid #fff;
+      border-radius: 50%;
+      vertical-align: middle;
+    }
+    label{
+      margin-right: 15px;
+    }
+    label:before {
+      content: "";
+      display: inline-block;
+      width: 18px;
+      height: 18px;
+      border: 1px solid #DDD;
+      border-radius: 50%;
+      background-color: #fff;
+      vertical-align: middle;
+    }
+    span{
+      display: inline-block;
+      height: 35px;
+      margin-top: 22px;
+      font-size: 14px;
+    }
+    .color{
+      color: @color-ye;
+      cursor: pointer;
+    }
+    .btn-login{
+      display: block;
+      width: 292px;
+      height: 48px;
+      background: #BEBEBE;
+      line-height: 48px;
+      border-radius: 4px;
+      margin: 40px auto 0;
+      letter-spacing: 4px;
+      cursor: pointer;
+      text-decoration: none;
+      border-width: 0;
+      color: @color-white;
+      font-size: 18px;
+      font-family: Arial;
+    }
+    .pon-right{
+      margin-left: 60px;
+    }
+  }
+}
+.hide{
+  display: none;
+}
+.show{
+  display: block;
+}
+

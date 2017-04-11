@@ -1,0 +1,39 @@
+.swiper-container {
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  z-index: 1;
+}
+.swiper-container .swiper-wrapper {
+  position: relative;
+  width: 100%;
+  height: 556px;
+}
+.swiper-container .swiper-wrapper .swiper-slide a {
+  color: #333;
+  text-align: left;
+}
+.swiper-container .swiper-button-disabled {
+  /*visibility: hidden;*/
+  opacity: 0;
+  /*display: none;*/
+  position: absolute;
+  top: 50%;
+  width: 27px;
+  height: 44px;
+  margin-top: -22px;
+  z-index: 10;
+  background-size: 27px 44px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.swiper-container .swiper-button-prev {
+  left: 49px;
+}
+.swiper-container .swiper-button-next {
+  right: 66px;
+}
+.swiper-container:hover .swiper-button-disabled {
+  opacity: 1;
+  transition: all 0.35s ease-in;
+}
